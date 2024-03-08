@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* - White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%) */
+
+:root{
+    --green-primary:   hsl(75, 94%, 57%);
+    --white-neutral:  hsl(0, 0%, 100%);
+    --gray-neutral:  hsl(0, 0%, 20%);
+    --dark-neutral:   hsl(0, 0%, 12%);
+    --off-black-neutral:  hsl(0, 0%, 8%);
+
+}
+
+
+
+.main-container{
+    height: 750px;    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--off-black-neutral);
+
+
+
+}
+
+.social-container{
+    height: 600px;
+    width: 400px;
+    padding: 30px 40px;
+    background: var(--dark-neutral);
+    border-radius: 5px;
+}
+
+.social-profile, .social-handel-buttons{
+    width: 100%;
+    /* border: 2px solid gray; */
+}
+
+.social-profile{
+    height: 43%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.social-handel-buttons{
+    height: 60%;
+}
+
+
+
+
+.profile-img img{
+
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.profile-name{
+    padding: 15px 0px 30px 0px;
+}
+
+.profile-name h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--white-neutral);
+    font-weight: 600;
+
+
+
+}
+.profile-name p{
+    color: var(--green-primary);
+    font-weight: 600;
+
+
+}
+
+.para p{
+    font-size: 14px;
+    color: var(--white-neutral);
+    opacity: .7;
+}
+
+/* button box start from here / */
+
+.social-handel-buttons{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn{
+    text-decoration: none;
+    /* border: 2px solid green; */
+    border-radius: 7px;
+
+    padding: 15px;
+    text-align: center;
+    margin: 7px 0px ;
+    background: var(--gray-neutral);
+    color: var(--white-neutral);
+    font-size: 15px;
+    font-weight: 700;
+
+
+
+
+}
+.btn:hover{
+    background: var(--green-primary);
+    cursor: pointer;
+    color: var(--dark-neutral);
+    color: var(--off-black-neutral);
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .social-container{
+        /* height: 600px;
+        width: 400px;
+        padding: 30px 40px;
+        background: var(--dark-neutral);
+        border-radius: 5px; */
+        width: 90%;
+        padding: 20px;
+
+
+
+
+
+
+    }
+    
+}
